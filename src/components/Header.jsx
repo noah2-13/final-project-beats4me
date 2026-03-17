@@ -1,16 +1,9 @@
-function Header() {
+function Header({ title, subtitle }) {
   return (
-    <header>
-      <h1>Noah Trammell</h1>
-
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
+    <div className="m-6 p-3 border">
+      <h1 className="text-4xl font-bold">{title}</h1>
+      <h3 className="text-xl">{subtitle}</h3>
+    </div>
   );
 }
 

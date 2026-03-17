@@ -1,9 +1,14 @@
-function Card({ title, description, emoji }) {
+function Card({ name, title, blurb, image }) {
   return (
-    <div className="max-w-sm p-6 m-4 bg-white border border-gray-200 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1">
-      <span className="text-5xl block mb-4">{emoji}</span>
-      <h3 className="text-2xl font-bold text-blue-600 mb-2">{title}</h3>
-      <p className="text-gray-600 italic">{description}</p>
+    <div className="bg-white text-black rounded-2xl shadow-md p-6 w-72 text-center">
+      <img
+        src={image}
+        alt={name}
+        className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+      />
+      <h2 className="text-xl font-bold">{name}</h2>
+      <h3 className="text-md text-gray-600 mb-2">{title}</h3>
+      <p className="text-sm">{blurb}</p>
     </div>
   );
 }
