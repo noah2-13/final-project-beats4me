@@ -25,18 +25,20 @@ function AboutMe() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
         <Card
-          name="Noah Trammell"
-          title="Code Owner / Project Manager"
-          blurb="I’m building Beats4Me because I love music, drumming, and production, and I want a platform made for producers."
-          image="https://picsum.photos/200"
-        />
+  name="Noah Trammell"
+  title="Code Owner / Project Manager"
+  blurb="I'm building Beats4Me because I love music, drumming..."
+  image="https://picsum.photos/200"
+  extra="GitHub: github.com/noah2-13 | Skills: React, JavaScript, CSS"
+/>
 
-        <Card
-          name="Noah Trammell"
-          title="Creative Director"
-          blurb="I want the app to feel clean, modern, and inspired by music platforms and social media feeds."
-          image="https://picsum.photos/210"
-        />
+  <Card
+  name="Noah Trammell"
+  title="Creative Director"
+  blurb="I want the app to feel clean, modern, and inspired..."
+  image="https://picsum.photos/210"
+  extra="Fun fact: I produce beats in my free time 🥁"
+/>
       </div>
     </div>
   );
