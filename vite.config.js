@@ -1,29 +1,8 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
-import Beats from "./pages/Beats";
-import Components from "./pages/Components";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-function App() {
-  return (
-    <BrowserRouter basename="/final-project-beats4me/">
-      <nav>
-        <Link to="/">Home</Link> {" "}
-        <Link to="/about">About</Link> {" "}
-        <Link to="/profile">Profile</Link> {" "}
-        <Link to="/beats">Beats</Link> {" "}
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/beats" element={<Beats />} />
-        <Route path="/components" element={<Components />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-export default App;
+export default defineConfig({
+  base: '/final-project-beats4me/',
+  plugins: [react(), tailwindcss()],
+})
